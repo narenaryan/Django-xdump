@@ -1,0 +1,20 @@
+ {% extends 'base.html' %} 
+ {% load staticfiles %} 
+ {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <div class="row">
+                <center>
+                    <h1>Hello</h1>
+                    <p>Dump your data here</p>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-lg dump">Download</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block javascript %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
